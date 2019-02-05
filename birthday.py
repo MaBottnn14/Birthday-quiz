@@ -1,7 +1,7 @@
 """
 birthday.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: MaBottnn14
+Credit: none
 Assignment:
 
 Your program will ask the user the following questions, in this order:
@@ -31,3 +31,53 @@ Example Session
   And the day? 11
   Eric, you are a fall baby of the stone age.
 """
+from datetime import datetime
+from calendar import month_name
+todaymonth = datetime.today().month
+todaydate = datetime.today().day
+
+
+name = str(input("Hello, what is your name? "))
+month = str(input("Hi "+name+", what was the name of the month you were born in? "))
+year = int(input("And what year were you born in, "+name+"? "))
+day = int(input("And the day? "))
+if day == todaydate and int(month) == todaymonth :
+    print("Happy Birthday!")
+elif day == 31 and month == "october":
+    print("You were born on Halloween!")
+else:
+    if month == "february":
+        season = "winter"
+    if month == "january":
+        season = "winter"
+    if month == "december":
+        season = "winter"
+    if month == "march":
+        season = "spring"
+    if month == "april":
+        season = "spring"
+    if month == "may":
+        season = "spring"
+    if month == "june":
+        season = "summer"
+    if month == "july":
+        season = "summer"
+    if month == "august":
+        season = "summer"
+    if month == "september":
+        season = "fall"
+    if month == "october":
+        season = "fall"
+    if month == "november":
+        season = "fall"
+    if year < 1980:
+        era = "stone age"
+    if year >= 1980 and year < 1990:
+        era = "eighties"
+    if year < 2000 and year >= 1900:
+        era = "nineties"
+    if year >= 2000:
+        era = "two thousands"
+    print("" +name + ", you are a " + season +" baby of the " + era + ".")
+
+
