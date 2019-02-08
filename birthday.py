@@ -1,7 +1,7 @@
 """
 birthday.py
 Author: MaBottnn14
-Credit: none
+Credit: andrew
 Assignment:
 
 Your program will ask the user the following questions, in this order:
@@ -36,13 +36,14 @@ from calendar import month_name
 todaymonth = datetime.today().month
 todaydate = datetime.today().day
 
-
 name = str(input("Hello, what is your name? "))
 month = str(input("Hi "+name+", what was the name of the month you were born in? "))
 year = int(input("And what year were you born in, "+name+"? "))
 day = int(input("And the day? "))
-if day == todaydate and int(month) == todaymonth :
-    print("Happy Birthday!")
+
+if day == todaydate and month == (month_name[todaymonth]).lower():
+    print("Happy birthday!")
+
 elif day == 31 and month == "october":
     print("You were born on Halloween!")
 else:
@@ -71,7 +72,7 @@ else:
     if month == "november":
         season = "fall"
     if year < 1980:
-        era = "stone age"
+        era = "Stone Age"
     if year >= 1980 and year < 1990:
         era = "eighties"
     if year < 2000 and year >= 1900:
@@ -79,5 +80,3 @@ else:
     if year >= 2000:
         era = "two thousands"
     print("" +name + ", you are a " + season +" baby of the " + era + ".")
-
-
