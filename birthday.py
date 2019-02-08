@@ -47,29 +47,29 @@ if day == todaydate and month == (month_name[todaymonth]).lower():
 elif day == 31 and month == "october":
     print("You were born on Halloween!")
 else:
-    if month == "february":
+    if month == "February":
         season = "winter"
-    if month == "january":
+    if month == "January":
         season = "winter"
-    if month == "december":
+    if month == "December":
         season = "winter"
-    if month == "march":
+    if month == "March":
         season = "spring"
-    if month == "april":
+    if month == "April":
         season = "spring"
-    if month == "may":
+    if month == "May":
         season = "spring"
-    if month == "june":
+    if month == "June":
         season = "summer"
-    if month == "july":
+    if month == "July":
         season = "summer"
-    if month == "august":
+    if month == "August":
         season = "summer"
-    if month == "september":
+    if month == "September":
         season = "fall"
-    if month == "october":
+    if month == "October":
         season = "fall"
-    if month == "november":
+    if month == "November":
         season = "fall"
     if year < 1980:
         era = "Stone Age"
