@@ -79,4 +79,4 @@ else:
         era = "nineties"
     if year >= 2000:
         era = "two thousands"
-    print("" +name + ", you are a " + season +" baby of the " + era + ".")
+    print(name + ", you are a " + season +" baby of the " + era + ".")
