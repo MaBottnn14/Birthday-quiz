@@ -75,7 +75,7 @@ else:
         era = "Stone Age"
     if year >= 1980 and year < 1990:
         era = "eighties"
-    if year < 2000 and year >= 1900:
+    if year < 2000 and year >= 1990:
         era = "nineties"
     if year >= 2000:
         era = "two thousands"
