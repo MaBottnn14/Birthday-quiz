@@ -41,7 +41,7 @@ month = str(input("Hi "+name+", what was the name of the month you were born in?
 year = int(input("And what year were you born in, "+name+"? "))
 day = int(input("And the day? "))
 
-if day == todaydate and month == (month_name[todaymonth]).lower():
+if day == todaydate and month == (month_name[todaymonth]):
     print("Happy birthday!")
 
 elif day == 31 and month == "october":
